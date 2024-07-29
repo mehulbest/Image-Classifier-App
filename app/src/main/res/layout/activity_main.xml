@@ -1,0 +1,63 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:padding="16dp"
+    android:background="?android:attr/windowBackground">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:background="#fff"
+        android:id="@+id/imageView"
+        android:scaleType="centerCrop"
+        android:layout_marginBottom="16dp"
+        android:contentDescription="@string/image_desc"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/imageView"
+        android:orientation="horizontal"
+        android:layout_marginBottom="16dp"
+        android:gravity="center">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Select Image"
+            android:id="@+id/selectBtn"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/button_background"
+            android:elevation="2dp"
+            android:padding="12dp"
+            android:textColor="#FFFFFF"/>
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Predict"
+            android:id="@+id/predictBtn"
+            android:layout_marginStart="8dp"
+            android:background="@drawable/button_background"
+            android:elevation="2dp"
+            android:padding="12dp"
+            android:textColor="#FFFFFF"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/resView"
+        android:text="Prediction"
+        android:textSize="20sp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@id/linLayout"
+        android:layout_centerHorizontal="true"
+        android:textColor="?android:attr/textColorPrimary"/>
+</RelativeLayout>

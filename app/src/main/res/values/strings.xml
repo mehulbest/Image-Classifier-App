@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">ImageClassifierApp</string>
+    <string name="image_desc">Image Description</string>
+</resources>
